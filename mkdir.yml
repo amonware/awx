@@ -1,0 +1,10 @@
+---
+- name: Create /home/_work/ directory on target servers
+  hosts: all
+  become: yes
+  tasks:
+    - name: Ensure /home/_work/ directory exists
+      file:
+        path: /home/_work/
+        state: directory
+        mode: '0755'
