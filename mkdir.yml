@@ -3,8 +3,8 @@
   hosts: all
   become: yes
   tasks:
-    - name: Ensure /home/_work/ directory exists
+    - name: Ensure /home/_work2/ directory exists
       file:
-        path: /home/_work/
+        path: /home/_work2/
         state: directory
         mode: '0755'
